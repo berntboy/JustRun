@@ -1,7 +1,7 @@
-const Sequelize = require("sequelize");
-const db = require("../database");
+import Sequelize from "sequelize";
+import db from "../database.js";
 
-module.exports = db.define("runs", {
+export default db.define("runs", {
   totalMiles: {
     type: Sequelize.DECIMAL,
     defaultValue: 0,
