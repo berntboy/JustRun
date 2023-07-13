@@ -1,7 +1,7 @@
-const Sequelize = require("sequelize");
-const db = require("../database");
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
+import Sequelize from "sequelize";
+import db from "../database.js";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
 
 const Users = db.define("user", {
   firstName: {
@@ -63,7 +63,7 @@ Users.byToken = async function (token) {
     const { id } = await jwt.verify(token, "test"); /* test = password */
     const user = Users.findByPk(id);
     if (!user) {
-      throw new error(401);
+      throw new Error(401);
     }
     return user;
   } catch (err) {
@@ -116,4 +116,4 @@ const hashPassword = async (user) => {
 Users.beforeCreate(hashPassword);
 Users.beforeUpdate(hashPassword);
 
-module.exports = Users;
+export default Users;
