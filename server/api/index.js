@@ -1,9 +1,11 @@
-const express = require("express");
+import express from "express";
+import runners from "./runners";
+import user from "./user";
 
 const router = express.Router();
 
-router.use("/runners", require("./runners"));
-router.use("/user", require("./user"));
+router.use("/runners", runners);
+router.use("/user", user);
 
 router.use((req, res, next) => {
   const err = new Error("API route not found!");
@@ -11,4 +13,4 @@ router.use((req, res, next) => {
   next(err);
 });
 
-module.exports = router;
+export default router;
