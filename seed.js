@@ -1,6 +1,6 @@
-const { db } = require("./server/db");
-const Users = require("./server/db/models/Users");
-const Runs = require("./server/db/models/Runs");
+import { db } from "./server/db/index.js";
+import Users from "./server/db/models/Users.js";
+import Runs from "./server/db/models/Runs.js";
 
 const users = [
   {
