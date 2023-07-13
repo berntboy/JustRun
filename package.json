@@ -7,13 +7,17 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "seed": "node ./seed.js"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.0",
     "axios": "^1.4.0",
+    "@mui/x-date-pickers": "^6.2.1",
+    "@mui/icons-material": "^5.11.11",
+    "@reduxjs/toolkit": "^1.9.3",
     "bcrypt": "^5.1.0",
     "chart.js": "^4.3.0",
     "cookie-parser": "^1.4.6",
