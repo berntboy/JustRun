@@ -1,4 +1,3 @@
-import React from "react";
 import { AppBar } from "@mui/material";
 import { Box } from "@mui/material";
 import { Toolbar } from "@mui/material";
@@ -7,7 +6,7 @@ import { Button } from "@mui/material";
 import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-const axios = require("axios");
+import axios from "axios";
 import { getUserIdNumber } from "../reducers/runnersSlice";
 
 export default function NavBar() {
