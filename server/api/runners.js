@@ -1,5 +1,5 @@
-const express = require("express");
-const { Users, Runs } = require("../db");
+import express from "express";
+import { Users, Runs } from "../db/index.js";
 
 const router = express.Router();
 
@@ -75,4 +75,4 @@ router.get("/verify", async (req, res, next) => {
   }
 });
 
-module.exports = router;
+export default router;
