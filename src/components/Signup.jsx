@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Button } from "@mui/material";
 import { Container } from "@mui/material";
@@ -8,7 +8,7 @@ import { Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { addUser } from "../reducers/runnersSlice";
 import { getUserIdNumber } from "../reducers/runnersSlice";
-const axios = require("axios");
+import axios from "axios";
 
 export default function Signup() {
   const dispatch = useDispatch();
