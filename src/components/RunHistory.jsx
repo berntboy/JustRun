@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Typography } from "@mui/material";
 import { Grid, Container } from "@mui/material";

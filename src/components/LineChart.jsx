@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Chart from "chart.js/auto";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
